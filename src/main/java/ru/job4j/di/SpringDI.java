@@ -14,5 +14,8 @@ public class SpringDI {
         ui.print();
 
         System.out.println(ui.askStr());
+
+        StartUI another = context.getBean(StartUI.class);
+        another.print();
     }
 }
